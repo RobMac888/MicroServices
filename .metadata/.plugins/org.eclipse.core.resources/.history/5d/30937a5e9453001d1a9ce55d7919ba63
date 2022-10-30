@@ -1,0 +1,15 @@
+package com.example.controller;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import com.example.model.Devices;
+
+@Controller //rest controller exposes controller//controller
+public class Store {
+	private Devices listOfDevices;
+	@RequestMapping("/")
+	public String home()
+	{
+		return "home";
+	}	
+
+}
